@@ -1,0 +1,12 @@
+POST http://localhost:5085/
+Content-Type: application/json
+
+{
+  "VehicleNum": 2,
+  "OwnerId": 3,
+  "Model": "Toyota Corolla",
+  "Make": "2023",
+  "Year": "2023-01-01"
+}
+###
+GET  http://localhost:5085/loc/1

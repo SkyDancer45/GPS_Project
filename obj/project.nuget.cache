@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "W7cFaihkwnhoA5eCgEMNJ2V5+TZB8z6yF3UCeRmCogzvCOfEXWwzbGcmzGniuYhv3DtTTk2SrADOS1b+YqVoHg==",
+  "success": true,
+  "projectFilePath": "/home/kanishk/Documents/dotnet/GPS.Api/GPS.Api.csproj",
+  "expectedPackageFiles": [
+    "/home/kanishk/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.6/microsoft.aspnetcore.app.ref.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
