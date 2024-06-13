@@ -1,17 +1,13 @@
 ﻿
 namespace GPS.Api.Dtos
 {
-    public record VehicleDto
+    public class VehicleDto
     {
-        public int VehicleNum { get; init; }
-        public int OwnerId { get; init; }
-        public string Model { get; init; }
-        public string Make { get; init; }
-        public DateOnly Year { get; init; }
-        private decimal XCoordinate;
-        private decimal YCoordinate;
-        private decimal Altitude;
-        
+        public int VehicleNum { get; init; } // Immutable
+        public int OwnerId { get; set; }     // Mutable
+        public string Model { get; set; }
+        public string Make { get; set; }
+        public DateOnly Year { get; set; }
 
         public VehicleDto(int vehicleNum, int ownerId, string model, string make, DateOnly year)
         {
@@ -22,4 +18,5 @@ namespace GPS.Api.Dtos
             Year = year;
         }
     }
+
 }
