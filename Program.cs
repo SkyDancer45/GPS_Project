@@ -14,7 +14,7 @@ builder.Services.AddDbContext<GpsContext>(options =>
     options.UseSqlite(connstring));
 
 var app = builder.Build();
-
+app.MigrateDb();
 // Map endpoints
 app.MapUserInfoEndpoints();
 app.MapCarInfoEndpoints();

@@ -40,6 +40,24 @@ namespace GPS.Api.Data.Migrations
                     b.HasKey("UserID");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserID = "user1",
+                            Dob = new DateOnly(1990, 1, 1),
+                            Email = "user1@example.com",
+                            OwnerID = "owner1",
+                            UserPassword = "password1"
+                        },
+                        new
+                        {
+                            UserID = "user2",
+                            Dob = new DateOnly(1992, 2, 2),
+                            Email = "user2@example.com",
+                            OwnerID = "owner2",
+                            UserPassword = "password2"
+                        });
                 });
 
             modelBuilder.Entity("GPS.Api.Entities.Vehicle", b =>

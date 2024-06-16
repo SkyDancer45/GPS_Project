@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace GPS.Api.Data.Migrations
 {
     /// <inheritdoc />
@@ -42,6 +44,15 @@ namespace GPS.Api.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Vehicles", x => x.VehicleNum);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "UserID", "Dob", "Email", "OwnerID", "UserPassword" },
+                values: new object[,]
+                {
+                    { "user1", new DateOnly(1990, 1, 1), "user1@example.com", "owner1", "password1" },
+                    { "user2", new DateOnly(1992, 2, 2), "user2@example.com", "owner2", "password2" }
                 });
         }
 
