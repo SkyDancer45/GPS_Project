@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace GPS.Api.Data.Migrations
+namespace GPS.Api.Migrations
 {
     [DbContext(typeof(GpsContext))]
-    [Migration("20240616201655_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240616222541_seedVehicles")]
+    partial class seedVehicles
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -87,8 +87,8 @@ namespace GPS.Api.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateOnly>("Year")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Year")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("VehicleNum");
 

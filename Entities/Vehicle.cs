@@ -1,4 +1,5 @@
 ﻿
+
 using System.ComponentModel.DataAnnotations;
 
 namespace GPS.Api.Entities
@@ -13,7 +14,7 @@ namespace GPS.Api.Entities
     public required string Make { get; set; }
     public required double Latitude { get; set; }
     public required double Longitude { get; set; }
-    public required DateOnly Year { get; set; }
+    public required int Year { get; set; }
   }
 }
 

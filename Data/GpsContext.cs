@@ -32,6 +32,27 @@ public class GpsContext : DbContext
                 Dob = new DateOnly(1992, 2, 2)
             }
         );
+        modelBuilder.Entity<Vehicle>().HasData(
+            new Vehicle{
+                VehicleNum=1,
+                OwnerId = "ownerId1",
+                Model="model1",
+                Make="make1",
+                Latitude = 0.0001,
+                Longitude=0.00001,
+                Year=2021
+
+            },
+            new Vehicle{
+                VehicleNum=2,
+                OwnerId = "ownerId2",
+                Model="model2",
+                Make="make2",
+                Latitude = 0.0002,
+                Longitude=0.00002,
+                Year=2022
+            }
+        );
 
         base.OnModelCreating(modelBuilder);
     }

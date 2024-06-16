@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace GPS.Api.Data.Migrations
+namespace GPS.Api.Migrations
 {
     [DbContext(typeof(GpsContext))]
     partial class GpsContextModelSnapshot : ModelSnapshot
@@ -84,8 +84,8 @@ namespace GPS.Api.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateOnly>("Year")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Year")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("VehicleNum");
 
