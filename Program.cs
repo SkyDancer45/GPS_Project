@@ -10,6 +10,7 @@ var connstring = builder.Configuration.GetConnectionString("Gps");
 // Register DbContext with DI
 builder.Services.AddDbContext<GpsContext>(options =>
     options.UseSqlite(connstring));
+builder.Services.AddScoped<GpsContext>();
 
 var app = builder.Build();
 
