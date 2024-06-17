@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GPS.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc0944e097fe9397cd481a7a14d875078010d7cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6427b7a73b564ec97bfa909b69d967003df23c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("GPS.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GPS.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

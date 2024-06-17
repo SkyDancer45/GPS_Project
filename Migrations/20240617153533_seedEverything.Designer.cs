@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GPS.Api.Migrations
 {
     [DbContext(typeof(GpsContext))]
-    [Migration("20240616222541_seedVehicles")]
-    partial class seedVehicles
+    [Migration("20240617153533_seedEverything")]
+    partial class seedEverything
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -93,6 +93,28 @@ namespace GPS.Api.Migrations
                     b.HasKey("VehicleNum");
 
                     b.ToTable("Vehicles");
+
+                    b.HasData(
+                        new
+                        {
+                            VehicleNum = 1,
+                            Latitude = 0.0001,
+                            Longitude = 1.0000000000000001E-05,
+                            Make = "make1",
+                            Model = "model1",
+                            OwnerId = "ownerId1",
+                            Year = 2021
+                        },
+                        new
+                        {
+                            VehicleNum = 2,
+                            Latitude = 0.00020000000000000001,
+                            Longitude = 2.0000000000000002E-05,
+                            Make = "make2",
+                            Model = "model2",
+                            OwnerId = "ownerId2",
+                            Year = 2022
+                        });
                 });
 #pragma warning restore 612, 618
         }
