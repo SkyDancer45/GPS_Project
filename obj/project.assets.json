@@ -2534,19 +2534,19 @@
     ]
   },
   "packageFolders": {
-    "/home/kanishk/.nuget/packages/": {}
+    "C:\\Users\\adiwi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kanishk/Documents/dotnet/GPS.Api/GPS.Api.csproj",
+      "projectUniqueName": "C:\\Users\\adiwi\\Work\\GPS_Project\\GPS.Api.csproj",
       "projectName": "GPS.Api",
-      "projectPath": "/home/kanishk/Documents/dotnet/GPS.Api/GPS.Api.csproj",
-      "packagesPath": "/home/kanishk/.nuget/packages/",
-      "outputPath": "/home/kanishk/Documents/dotnet/GPS.Api/obj/",
+      "projectPath": "C:\\Users\\adiwi\\Work\\GPS_Project\\GPS.Api.csproj",
+      "packagesPath": "C:\\Users\\adiwi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\adiwi\\Work\\GPS_Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/kanishk/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\adiwi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2564,6 +2564,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2592,12 +2597,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.6, 8.0.6]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2606,7 +2605,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.106/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
